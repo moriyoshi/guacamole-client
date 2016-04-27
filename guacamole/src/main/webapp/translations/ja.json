@@ -1,0 +1,629 @@
+{
+    
+    "NAME" : "Japanese",
+    
+    "APP" : {
+
+        "ACTION_ACKNOWLEDGE"        : "OK",
+        "ACTION_CANCEL"             : "キャンセル",
+        "ACTION_CLONE"              : "クローン",
+        "ACTION_CONTINUE"           : "コンティニュー",
+        "ACTION_DELETE"             : "削除",
+        "ACTION_DELETE_SESSIONS"    : "セッションの削除",
+        "ACTION_LOGIN"              : "ログイン",
+        "ACTION_LOGOUT"             : "ログアウト",
+        "ACTION_MANAGE_CONNECTIONS" : "接続",
+        "ACTION_MANAGE_PREFERENCES" : "設定",
+        "ACTION_MANAGE_SETTINGS"    : "設定",
+        "ACTION_MANAGE_SESSIONS"    : "現在のセッション",
+        "ACTION_MANAGE_USERS"       : "ユーザー",
+        "ACTION_NAVIGATE_BACK"      : "戻る",
+        "ACTION_NAVIGATE_HOME"      : "ホーム",
+        "ACTION_SAVE"               : "保存",
+        "ACTION_SEARCH"             : "検索",
+        "ACTION_UPDATE_PASSWORD"    : "パスワードの更新",
+        "ACTION_VIEW_HISTORY"       : "ヒストリー",
+
+        "DIALOG_HEADER_ERROR" : "エラー",
+
+        "ERROR_PASSWORD_BLANK"    : "パスワードは空欄にできません。",
+        "ERROR_PASSWORD_MISMATCH" : "パスワードが一致しません。",
+
+        "FIELD_HEADER_PASSWORD"       : "パスワード:",
+        "FIELD_HEADER_PASSWORD_AGAIN" : "パスワードを再入力:",
+
+        "FIELD_PLACEHOLDER_FILTER" : "フィルター",
+
+        "FORMAT_DATE_TIME_PRECISE" : "yyyy-MM-dd HH:mm:ss",
+
+        "INFO_ACTIVE_USER_COUNT" : "{USERS}人のユーザーが利用しています。",
+
+        "NAME" : "Guacamole ${project.version}",
+
+        "TEXT_HISTORY_DURATION" : "{VALUE} {UNIT, select, second{秒} minute{分} hour{時間} day{日} other{}}"
+
+    },
+
+    "CLIENT" : {
+
+        "ACTION_ACKNOWLEDGE"               : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_CLEAR_COMPLETED_TRANSFERS" : "クリア",
+        "ACTION_DISCONNECT"                : "切断",
+        "ACTION_LOGOUT"                    : "@:APP.ACTION_LOGOUT",
+        "ACTION_NAVIGATE_BACK"             : "@:APP.ACTION_NAVIGATE_BACK",
+        "ACTION_NAVIGATE_HOME"             : "@:APP.ACTION_NAVIGATE_HOME",
+        "ACTION_RECONNECT"                 : "再接続",
+        "ACTION_SAVE_FILE"                 : "@:APP.ACTION_SAVE",
+        "ACTION_UPLOAD_FILES"              : "アップロード",
+
+        "DIALOG_HEADER_CONNECTING"       : "接続中",
+        "DIALOG_HEADER_CONNECTION_ERROR" : "接続エラー",
+        "DIALOG_HEADER_DISCONNECTED"     : "接続されていません",
+
+        "ERROR_CLIENT_201"     : "サーバーが高負荷のため、接続が切断されました。数分後に再度接続をお試しください。",
+        "ERROR_CLIENT_202"     : "リモートデスクトップの応答が遅すぎるため、Guacamoleサーバーは接続を切断しました。再度接続を行うか、システム管理者に連絡してください。",
+        "ERROR_CLIENT_203"     : "リモートデスクトップがエラーのため接続を切断しました。再度接続を行うか、システム管理者に連絡してください。",
+        "ERROR_CLIENT_205"     : "他の接続と衝突したため、接続が切断されました。後で再度接続をお試しください。",
+        "ERROR_CLIENT_301"     : "ログインに失敗しました。再接続の上、再度お試しください。",
+        "ERROR_CLIENT_303"     : "この接続にアクセスする権限がありません。もしアクセスが必要な場合は、システム管理者に連絡し、自分自身を許可ユーザーのリストに加えるか、または、システム設定を確認してください。",
+        "ERROR_CLIENT_308"     : "Guacamoleサーバーは、接続が切断されたと思われる間ブラウザーからの応答がなかったため、接続を切断しました。これは、Wi-Fiの電波が断続的だったり、ネットワーク速度が非常に遅いなどの理由で起こります。ネットワークの状況を確認し再度お試しください。",
+        "ERROR_CLIENT_31D"     : "Guacamoleサーバーは、ユーザー一人当たりが利用可能な同時接続数に達したために、接続を切断しました。一つ以上の接続を閉じて、再度接続をお試しください。",
+        "ERROR_CLIENT_DEFAULT" : "Guacamoleサーバーの内部でエラーが発生したため、接続が切断されました。もしこの問題が継続する場合は、システム管理者に連絡するか、システムログを確認してください。",
+
+        "ERROR_TUNNEL_201"     : "Guacamoleサーバーは、同時接続数が多すぎるため、接続を拒否しました。数分後に再度接続をお試しください。",
+        "ERROR_TUNNEL_202"     : "サーバーの応答が遅すぎるため、接続が切断されました。これはWi-Fiの電波が断続的だったり、ネットワーク速度が非常に遅いなどの理由で起こります。ネットワークの状況を確認し再度接続を試すか、システム管理者に連絡してください。",
+        "ERROR_TUNNEL_203"     : "サーバーでエラーが発生したため、接続が切断されました。再度接続を試すか、システム管理者に連絡してください。",
+        "ERROR_TUNNEL_204"     : "要求された接続が存在しません。接続名を確認し、再度お試しください。",
+        "ERROR_TUNNEL_205"     : "指定された接続は現在使用中です。同じ接続への同時アクセスはできません。後で再度お試しください。",
+        "ERROR_TUNNEL_301"     : "未ログインのため、この接続にアクセスする許可がありません。ログイン後再度お試しください。",
+        "ERROR_TUNNEL_303"     : "この接続にアクセスする許可がありません。もしアクセスが必要な場合は、システム管理者に連絡し、自分自身を許可ユーザーのリストに加えるか、または、システム設定を確認してください。",
+        "ERROR_TUNNEL_308"     : "Guacamoleサーバーは、接続が切断されたと思われる間ブラウザーからの応答がなかったため、接続を切断しました。これは、Wi-Fiの電波が断続的だったり、ネットワーク速度が非常に遅いなどの理由で起こります。ネットワークの状況を確認し再度お試しください。",
+        "ERROR_TUNNEL_31D"     : "Guacamoleサーバーは、ユーザー一人当たりが利用可能な同時接続数に達したために、接続を切断しました。一つ以上の接続を閉じて、再度接続をお試しください。",
+        "ERROR_TUNNEL_DEFAULT" : "Guacamoleサーバーの内部でエラーが発生したため、接続が切断されました。もしこの問題が継続する場合は、システム管理者に連絡するか、システムログを確認してください。",
+
+        "ERROR_UPLOAD_100"     : "ファイル転送がサポートされていないか、有効になっていません。システム管理者に連絡するか、システムログを確認してください。",
+        "ERROR_UPLOAD_201"     : "現在転送中のファイルが多すぎます。既存の転送が終わるのを待って、再度お試しください。",
+        "ERROR_UPLOAD_202"     : "リモートデスクトップの応答が遅すぎるため、ファイルの転送ができません。再度試すか、システム管理者に連絡してください。",
+        "ERROR_UPLOAD_203"     : "ファイル転送中にリモートデスクトップサーバーでエラーが発生しました。再度試すか、システム管理者に連絡してください。",
+        "ERROR_UPLOAD_204"     : "ファイル転送の転送先が存在しません。転送先が存在するか確認し、再度お試しください。",
+        "ERROR_UPLOAD_205"     : "ファイル転送の転送先は現在ロックされています。進行中の作業があれば、その完了を待って、再度お試しください。",
+        "ERROR_UPLOAD_301"     : "未ログインのため、ファイルをアップロードする権限がありません。ログイン後再度お試しください。",
+        "ERROR_UPLOAD_303"     : "ファイルをアップロードする権限がありません。もしアクセスが必要な場合は、システム設定を自分で、またはシステム管理者と一緒に確認してください。",
+        "ERROR_UPLOAD_308"     : "ファイル転送が停止してしまっています。これは、Wi-Fiの電波が断続的だったり、ネットワーク速度が非常に遅いなどの理由で起こります。ネットワークの状況を確認し再度お試しください。",
+        "ERROR_UPLOAD_31D"     : "現在転送中のファイルが多すぎます。既存の転送が終わるのを待って、再度お試しください。",
+        "ERROR_UPLOAD_DEFAULT" : "Guacamoleサーバーの内部でエラーが発生したため、接続が切断されました。もしこの問題が継続する場合は、システム管理者に連絡するか、システムログを確認してください。",
+
+        "HELP_CLIPBOARD"           : "Guacamole内でコピー/切り取りされたテキストがここに表示されます。下のテキストを変更すると、リモートのクリップボードにも影響します。",
+        "HELP_INPUT_METHOD_NONE"   : "入力メソッドを利用しません。接続されている物理キーボードからのキーボード入力を受け付けます。",
+        "HELP_INPUT_METHOD_OSK"    : "Guacamole内蔵のオンスクリーンキーボードを表示し、そこからキーボード入力を受け付けます。オンスクリーンキーボードで他の入力メソッドでは入力できないキー入力ができます (Ctrl-Alt-Delなど)。",
+        "HELP_INPUT_METHOD_TEXT"   : "入力されたテキストからキーボードイベントをエミュレートします。スマートフォンなど物理キーボードがないデバイスで有用です。",
+        "HELP_MOUSE_MODE"          : "タッチ操作に対する、リモートのマウスの振る舞いを指定します。",
+        "HELP_MOUSE_MODE_ABSOLUTE" : "タップでクリック。クリックはタッチした場所で発生するものとする。",
+        "HELP_MOUSE_MODE_RELATIVE" : "ドラッグでマウスカーソルを移動、タップでクリック。クリックはマウスカーソルのある場所で発生するものとする。",
+
+        "INFO_NO_FILE_TRANSFERS" : "ファイル転送はありません。",
+
+        "NAME_INPUT_METHOD_NONE"   : "なし",
+        "NAME_INPUT_METHOD_OSK"    : "オンスクリーンキーボード",
+        "NAME_INPUT_METHOD_TEXT"   : "テキスト入力",
+        "NAME_KEY_CTRL"            : "Ctrlキー",
+        "NAME_KEY_ALT"             : "Altキー",
+        "NAME_KEY_ESC"             : "Escキー",
+        "NAME_KEY_TAB"             : "Tabキー",
+        "NAME_MOUSE_MODE_ABSOLUTE" : "タッチスクリーン",
+        "NAME_MOUSE_MODE_RELATIVE" : "タッチパッド",
+
+        "SECTION_HEADER_CLIPBOARD"      : "クリップボード",
+        "SECTION_HEADER_DEVICES"        : "デバイス",
+        "SECTION_HEADER_DISPLAY"        : "表示",
+        "SECTION_HEADER_FILE_TRANSFERS" : "ファイル転送",
+        "SECTION_HEADER_INPUT_METHOD"   : "入力メソッド",
+        "SECTION_HEADER_MOUSE_MODE"     : "マウスエミュレーションモード",
+
+        "TEXT_ZOOM_AUTO_FIT"              : "ブラウザーのウィンドウに自動的に大きさを合わせる",
+        "TEXT_CLIENT_STATUS_IDLE"         : "停止",
+        "TEXT_CLIENT_STATUS_CONNECTING"   : "Guacamoleに接続しています...",
+        "TEXT_CLIENT_STATUS_DISCONNECTED" : "切断されました。",
+        "TEXT_CLIENT_STATUS_WAITING"      : "Guacamoleに接続しました。応答を待っています...",
+        "TEXT_RECONNECT_COUNTDOWN"        : "{REMAINING}秒後に再接続します...",
+        "TEXT_FILE_TRANSFER_PROGRESS"     : "{PROGRESS} {UNIT, select, b{B} kb{KB} mb{MB} gb{GB} other{}}",
+
+        "URL_OSK_LAYOUT" : "layouts/ja-jp-qwerty.json"
+
+    },
+
+    "DATA_SOURCE_DEFAULT" : {
+        "NAME" : "デフォルト (XML)"
+    },
+
+    "FORM" : {
+
+        "FIELD_PLACEHOLDER_DATE" : "YYYY-MM-DD",
+        "FIELD_PLACEHOLDER_TIME" : "HH:MM:SS",
+
+        "HELP_SHOW_PASSWORD" : "クリックでパスワードを表示",
+        "HELP_HIDE_PASSWORD" : "クリックでパスワードを隠す"
+
+    },
+
+    "HOME" : {
+
+        "FIELD_PLACEHOLDER_FILTER" : "@:APP.FIELD_PLACEHOLDER_FILTER",
+
+        "INFO_ACTIVE_USER_COUNT" : "@:APP.INFO_ACTIVE_USER_COUNT",
+
+        "INFO_NO_RECENT_CONNECTIONS" : "最近の接続はありません。",
+        
+        "PASSWORD_CHANGED" : "パスワードが変更されました。",
+
+        "SECTION_HEADER_ALL_CONNECTIONS"    : "全ての接続",
+        "SECTION_HEADER_RECENT_CONNECTIONS" : "最近の接続"
+
+    },
+
+    "LOGIN": {
+
+        "ACTION_ACKNOWLEDGE" : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_CONTINUE"    : "@:APP.ACTION_CONTINUE",
+        "ACTION_LOGIN"       : "@:APP.ACTION_LOGIN",
+
+        "DIALOG_HEADER_ERROR" : "@:APP.DIALOG_HEADER_ERROR",
+
+        "ERROR_INVALID_LOGIN" : "Invalid Login",
+
+        "FIELD_HEADER_USERNAME" : "Username",
+        "FIELD_HEADER_PASSWORD" : "Password"
+
+    },
+
+    "MANAGE_CONNECTION" : {
+
+        "ACTION_ACKNOWLEDGE"          : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_CANCEL"               : "@:APP.ACTION_CANCEL",
+        "ACTION_CLONE"                : "@:APP.ACTION_CLONE",
+        "ACTION_DELETE"               : "@:APP.ACTION_DELETE",
+        "ACTION_SAVE"                 : "@:APP.ACTION_SAVE",
+
+        "DIALOG_HEADER_CONFIRM_DELETE" : "接続の削除",
+        "DIALOG_HEADER_ERROR"          : "@:APP.DIALOG_HEADER_ERROR",
+
+        "FIELD_HEADER_LOCATION" : "場所:",
+        "FIELD_HEADER_NAME"     : "名前:",
+        "FIELD_HEADER_PROTOCOL" : "プロトコル:",
+
+        "FORMAT_HISTORY_START" : "@:APP.FORMAT_DATE_TIME_PRECISE",
+
+        "INFO_CONNECTION_DURATION_UNKNOWN" : "--",
+        "INFO_CONNECTION_ACTIVE_NOW"       : "現在アクティブ",
+        "INFO_CONNECTION_NOT_USED"         : "この接続はまだ使われていません。",
+
+        "SECTION_HEADER_EDIT_CONNECTION" : "接続を編集",
+        "SECTION_HEADER_HISTORY"         : "利用履歴",
+        "SECTION_HEADER_PARAMETERS"      : "パラメーター",
+
+        "TABLE_HEADER_HISTORY_USERNAME" : "ユーザー名",
+        "TABLE_HEADER_HISTORY_START"    : "開始時間",
+        "TABLE_HEADER_HISTORY_DURATION" : "利用時間",
+
+        "TEXT_CONFIRM_DELETE"   : "削除した接続は、後から元に戻すことはできません。本当に接続を削除してよろしいですか?",
+        "TEXT_HISTORY_DURATION" : "@:APP.TEXT_HISTORY_DURATION"
+
+    },
+
+    "MANAGE_CONNECTION_GROUP" : {
+
+        "ACTION_ACKNOWLEDGE"   : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_CANCEL"        : "@:APP.ACTION_CANCEL",
+        "ACTION_DELETE"        : "@:APP.ACTION_DELETE",
+        "ACTION_SAVE"          : "@:APP.ACTION_SAVE",
+
+        "DIALOG_HEADER_CONFIRM_DELETE" : "接続グループの削除",
+        "DIALOG_HEADER_ERROR"          : "@:APP.DIALOG_HEADER_ERROR",
+
+        "FIELD_HEADER_LOCATION" : "場所:",
+        "FIELD_HEADER_NAME"     : "名前:",
+        "FIELD_HEADER_TYPE"     : "種類:",
+
+        "NAME_TYPE_BALANCING"       : "バランシング",
+        "NAME_TYPE_ORGANIZATIONAL"  : "組織ごと",
+
+        "SECTION_HEADER_EDIT_CONNECTION_GROUP" : "接続グループの編集",
+
+        "TEXT_CONFIRM_DELETE" : "削除した接続グループは、後から元に戻すことはできません。本当に接続グループを削除してよろしいですか?"
+
+    },
+
+    "MANAGE_USER" : {
+
+        "ACTION_ACKNOWLEDGE"   : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_CANCEL"        : "@:APP.ACTION_CANCEL",
+        "ACTION_CLONE"         : "@:APP.ACTION_CLONE",
+        "ACTION_DELETE"        : "@:APP.ACTION_DELETE",
+        "ACTION_SAVE"          : "@:APP.ACTION_SAVE",
+
+        "DIALOG_HEADER_CONFIRM_DELETE" : "ユーザーの削除",
+        "DIALOG_HEADER_ERROR"          : "@:APP.DIALOG_HEADER_ERROR",
+
+        "ERROR_PASSWORD_MISMATCH" : "@:APP.ERROR_PASSWORD_MISMATCH",
+
+        "FIELD_HEADER_ADMINISTER_SYSTEM"             : "システムの管理:",
+        "FIELD_HEADER_CHANGE_OWN_PASSWORD"           : "自分のパスワードの変更:",
+        "FIELD_HEADER_CREATE_NEW_USERS"              : "新しいユーザの作成:",
+        "FIELD_HEADER_CREATE_NEW_CONNECTIONS"        : "新しい接続の作成:",
+        "FIELD_HEADER_CREATE_NEW_CONNECTION_GROUPS"  : "新しい接続グループの作成:",
+        "FIELD_HEADER_PASSWORD"                      : "@:APP.FIELD_HEADER_PASSWORD",
+        "FIELD_HEADER_PASSWORD_AGAIN"                : "@:APP.FIELD_HEADER_PASSWORD_AGAIN",
+        "FIELD_HEADER_USERNAME"                      : "ユーザー名:",
+
+        "FIELD_PLACEHOLDER_FILTER" : "@:APP.FIELD_PLACEHOLDER_FILTER",
+
+        "INFO_READ_ONLY" : "申し訳ありませんが、このユーザーアカウントは編集できません。",
+
+        "SECTION_HEADER_CONNECTIONS" : "接続",
+        "SECTION_HEADER_EDIT_USER"   : "ユーザの編集",
+        "SECTION_HEADER_PERMISSIONS" : "権限",
+
+        "TEXT_CONFIRM_DELETE" : "Users cannot be restored after they have been deleted. Are you sure you want to delete this user?"
+
+    },
+    
+    "PROTOCOL_RDP" : {
+
+        "FIELD_HEADER_CLIENT_NAME"     : "クライアント名:",
+        "FIELD_HEADER_COLOR_DEPTH"     : "色深度:",
+        "FIELD_HEADER_CONSOLE"         : "管理者モードを有効にする:",
+        "FIELD_HEADER_CONSOLE_AUDIO"   : "オーディオの伝送をサポートする:",
+        "FIELD_HEADER_CREATE_DRIVE_PATH" : "ドライブを自動的に作成する:",
+        "FIELD_HEADER_DISABLE_AUDIO"   : "オーディオの伝送を無効にする:",
+        "FIELD_HEADER_DISABLE_AUTH"    : "認証を無効にする:",
+        "FIELD_HEADER_DOMAIN"          : "ドメイン:",
+        "FIELD_HEADER_DPI"             : "解像度 (DPI):",
+        "FIELD_HEADER_DRIVE_PATH"      : "ドライブ名:",
+        "FIELD_HEADER_ENABLE_DESKTOP_COMPOSITION" : "デスクトップ合成 (Aero) を有効にする:",
+        "FIELD_HEADER_ENABLE_DRIVE"               : "ドライブを有効にする:",
+        "FIELD_HEADER_ENABLE_FONT_SMOOTHING"      : "フォントのスムージング (ClearType) を有効にする:",
+        "FIELD_HEADER_ENABLE_FULL_WINDOW_DRAG"    : "ウィンドウの内容を表示したままドラッグする:",
+        "FIELD_HEADER_ENABLE_MENU_ANIMATIONS"     : "メニューのアニメーションを有効にする:",
+        "FIELD_HEADER_ENABLE_PRINTING"            : "印刷を有効にする:",
+        "FIELD_HEADER_ENABLE_SFTP"     : "SFTPを有効にする:",
+        "FIELD_HEADER_ENABLE_THEMING"             : "テーマを有効にする:",
+        "FIELD_HEADER_ENABLE_WALLPAPER"           : "壁紙を有効にする:",
+        "FIELD_HEADER_HEIGHT"          : "高さ:",
+        "FIELD_HEADER_HOSTNAME"        : "ホスト名:",
+        "FIELD_HEADER_IGNORE_CERT"     : "サーバーの証明書が信頼できなくても無視する:",
+        "FIELD_HEADER_INITIAL_PROGRAM" : "最初に起動するプログラム:",
+        "FIELD_HEADER_PASSWORD"        : "パスワード:",
+        "FIELD_HEADER_PORT"            : "ポート:",
+        "FIELD_HEADER_PRECONNECTION_BLOB" : "プリコネクションBLOB (VM ID):",
+        "FIELD_HEADER_PRECONNECTION_ID"   : "RDPソースID:",
+        "FIELD_HEADER_REMOTE_APP_ARGS" : "パラメーター:",
+        "FIELD_HEADER_REMOTE_APP_DIR"  : "作業ディレクトリー:",
+        "FIELD_HEADER_REMOTE_APP"      : "プログラム:",
+        "FIELD_HEADER_SECURITY"        : "セキュリティモード:",
+        "FIELD_HEADER_SERVER_LAYOUT"   : "キーボードレイアウト:",
+        "FIELD_HEADER_SFTP_DIRECTORY"   : "デフォルトのアップロード先ディレクトリ:",
+        "FIELD_HEADER_SFTP_HOSTNAME"    : "ホスト名:",
+        "FIELD_HEADER_SFTP_PASSPHRASE"  : "パスフレーズ:",
+        "FIELD_HEADER_SFTP_PASSWORD"    : "パスワード:",
+        "FIELD_HEADER_SFTP_PORT"        : "ポート:",
+        "FIELD_HEADER_SFTP_PRIVATE_KEY" : "秘密鍵:",
+        "FIELD_HEADER_SFTP_USERNAME"    : "ユーザー名:",
+        "FIELD_HEADER_STATIC_CHANNELS" : "静的チャネル名:",
+        "FIELD_HEADER_USERNAME"        : "ユーザー名:",
+        "FIELD_HEADER_WIDTH"           : "幅:",
+
+        "FIELD_OPTION_COLOR_DEPTH_16"    : "ハイカラー (16ビット)",
+        "FIELD_OPTION_COLOR_DEPTH_24"    : "True color (24ビット)",
+        "FIELD_OPTION_COLOR_DEPTH_32"    : "True color (32ビット)",
+        "FIELD_OPTION_COLOR_DEPTH_8"     : "256色",
+        "FIELD_OPTION_COLOR_DEPTH_EMPTY" : "",
+
+        "FIELD_OPTION_SECURITY_ANY"   : "自動",
+        "FIELD_OPTION_SECURITY_EMPTY" : "",
+        "FIELD_OPTION_SECURITY_NLA"   : "NLA (ネットワークレベル認証)",
+        "FIELD_OPTION_SECURITY_RDP"   : "RDP暗号化",
+        "FIELD_OPTION_SECURITY_TLS"   : "TLSによる暗号化",
+
+        "FIELD_OPTION_SERVER_LAYOUT_DE_DE_QWERTZ" : "ドイツ語 (Qwertz)",
+        "FIELD_OPTION_SERVER_LAYOUT_EMPTY"        : "",
+        "FIELD_OPTION_SERVER_LAYOUT_EN_US_QWERTY" : "US (Qwerty)",
+        "FIELD_OPTION_SERVER_LAYOUT_FAILSAFE"     : "Unicode",
+        "FIELD_OPTION_SERVER_LAYOUT_FR_FR_AZERTY" : "フランス語 (Azerty)",
+        "FIELD_OPTION_SERVER_LAYOUT_IT_IT_QWERTY" : "イタリア語 (Qwerty)",
+        "FIELD_OPTION_SERVER_LAYOUT_SV_SE_QWERTY" : "スウェーデン語 (Qwerty)",
+
+        "NAME" : "RDP",
+
+        "SECTION_HEADER_AUTHENTICATION"     : "認証",
+        "SECTION_HEADER_BASIC_PARAMETERS"   : "基本設定",
+        "SECTION_HEADER_DEVICE_REDIRECTION" : "ローカルデバイスのリダイレクション",
+        "SECTION_HEADER_DISPLAY"            : "表示",
+        "SECTION_HEADER_NETWORK"            : "ネットワーク",
+        "SECTION_HEADER_PERFORMANCE"        : "パフォーマンス",
+        "SECTION_HEADER_PRECONNECTION_PDU"  : "プリコネクション PDU / Hyper-V",
+        "SECTION_HEADER_REMOTEAPP"          : "RemoteApp",
+        "SECTION_HEADER_SFTP"               : "SFTP"
+
+    },
+
+    "PROTOCOL_SSH" : {
+
+        "FIELD_HEADER_COLOR_SCHEME" : "カラースキーム:",
+        "FIELD_HEADER_COMMAND"     : "実行するコマンド:",
+        "FIELD_HEADER_FONT_NAME"   : "フォント名:",
+        "FIELD_HEADER_FONT_SIZE"   : "フォントサイズ:",
+        "FIELD_HEADER_ENABLE_SFTP" : "SFTPを有効にする:",
+        "FIELD_HEADER_HOSTNAME"    : "ホスト名:",
+        "FIELD_HEADER_USERNAME"    : "ユーザー名:",
+        "FIELD_HEADER_PASSWORD"    : "パスワード:",
+        "FIELD_HEADER_PASSPHRASE"  : "パスフレーズ:",
+        "FIELD_HEADER_PORT"        : "ポート:",
+        "FIELD_HEADER_PRIVATE_KEY" : "秘密鍵:",
+
+        "FIELD_OPTION_COLOR_SCHEME_BLACK_WHITE" : "白背景に黒文字",
+        "FIELD_OPTION_COLOR_SCHEME_EMPTY"       : "",
+        "FIELD_OPTION_COLOR_SCHEME_GRAY_BLACK"  : "黒背景に灰色の文字",
+        "FIELD_OPTION_COLOR_SCHEME_GREEN_BLACK" : "黒背景に緑色の文字",
+        "FIELD_OPTION_COLOR_SCHEME_WHITE_BLACK" : "黒背景に白文字",
+
+        "FIELD_OPTION_FONT_SIZE_8"     : "8",
+        "FIELD_OPTION_FONT_SIZE_9"     : "9",
+        "FIELD_OPTION_FONT_SIZE_10"    : "10",
+        "FIELD_OPTION_FONT_SIZE_11"    : "11",
+        "FIELD_OPTION_FONT_SIZE_12"    : "12",
+        "FIELD_OPTION_FONT_SIZE_14"    : "14",
+        "FIELD_OPTION_FONT_SIZE_18"    : "18",
+        "FIELD_OPTION_FONT_SIZE_24"    : "24",
+        "FIELD_OPTION_FONT_SIZE_30"    : "30",
+        "FIELD_OPTION_FONT_SIZE_36"    : "36",
+        "FIELD_OPTION_FONT_SIZE_48"    : "48",
+        "FIELD_OPTION_FONT_SIZE_60"    : "60",
+        "FIELD_OPTION_FONT_SIZE_72"    : "72",
+        "FIELD_OPTION_FONT_SIZE_96"    : "96",
+        "FIELD_OPTION_FONT_SIZE_EMPTY" : "",
+
+        "NAME" : "SSH",
+
+        "SECTION_HEADER_AUTHENTICATION" : "認証",
+        "SECTION_HEADER_DISPLAY"        : "表示",
+        "SECTION_HEADER_NETWORK"        : "ネットワーク",
+        "SECTION_HEADER_SESSION"        : "セッション / 環境",
+        "SECTION_HEADER_SFTP"           : "SFTP"
+
+    },
+
+    "PROTOCOL_TELNET" : {
+
+        "FIELD_HEADER_COLOR_SCHEME"   : "カラースキーム:",
+        "FIELD_HEADER_FONT_NAME"      : "フォント名:",
+        "FIELD_HEADER_FONT_SIZE"      : "フォントサイズ:",
+        "FIELD_HEADER_HOSTNAME"       : "ホスト名:",
+        "FIELD_HEADER_USERNAME"       : "ユーザー名:",
+        "FIELD_HEADER_PASSWORD"       : "パスワード:",
+        "FIELD_HEADER_PASSWORD_REGEX" : "パスワード正規表現:",
+        "FIELD_HEADER_PORT"           : "ポート:",
+
+        "FIELD_OPTION_COLOR_SCHEME_BLACK_WHITE" : "白背景に黒文字",
+        "FIELD_OPTION_COLOR_SCHEME_EMPTY"       : "",
+        "FIELD_OPTION_COLOR_SCHEME_GRAY_BLACK"  : "黒背景に灰色の文字",
+        "FIELD_OPTION_COLOR_SCHEME_GREEN_BLACK" : "黒背景に緑色の文字",
+        "FIELD_OPTION_COLOR_SCHEME_WHITE_BLACK" : "黒背景に白文字",
+
+        "FIELD_OPTION_FONT_SIZE_8"     : "8",
+        "FIELD_OPTION_FONT_SIZE_9"     : "9",
+        "FIELD_OPTION_FONT_SIZE_10"    : "10",
+        "FIELD_OPTION_FONT_SIZE_11"    : "11",
+        "FIELD_OPTION_FONT_SIZE_12"    : "12",
+        "FIELD_OPTION_FONT_SIZE_14"    : "14",
+        "FIELD_OPTION_FONT_SIZE_18"    : "18",
+        "FIELD_OPTION_FONT_SIZE_24"    : "24",
+        "FIELD_OPTION_FONT_SIZE_30"    : "30",
+        "FIELD_OPTION_FONT_SIZE_36"    : "36",
+        "FIELD_OPTION_FONT_SIZE_48"    : "48",
+        "FIELD_OPTION_FONT_SIZE_60"    : "60",
+        "FIELD_OPTION_FONT_SIZE_72"    : "72",
+        "FIELD_OPTION_FONT_SIZE_96"    : "96",
+        "FIELD_OPTION_FONT_SIZE_EMPTY" : "",
+
+        "NAME" : "Telnet",
+
+        "SECTION_HEADER_AUTHENTICATION" : "認証",
+        "SECTION_HEADER_DISPLAY"        : "表示",
+        "SECTION_HEADER_NETWORK"        : "ネットワーク"
+
+    },
+
+    "PROTOCOL_VNC" : {
+
+        "FIELD_HEADER_AUDIO_SERVERNAME" : "オーディオサーバー名:",
+        "FIELD_HEADER_CLIPBOARD_ENCODING" : "エンコーディング:",
+        "FIELD_HEADER_COLOR_DEPTH"      : "色深度:",
+        "FIELD_HEADER_CURSOR"           : "カーソル:",
+        "FIELD_HEADER_DEST_HOST"        : "接続先ホスト名:",
+        "FIELD_HEADER_DEST_PORT"        : "接続先ポート:",
+        "FIELD_HEADER_ENABLE_AUDIO"     : "オーディオを有効にする:",
+        "FIELD_HEADER_ENABLE_SFTP"      : "SFTPを有効にする:",
+        "FIELD_HEADER_HOSTNAME"         : "ホスト名:",
+        "FIELD_HEADER_PASSWORD"         : "パスワード:",
+        "FIELD_HEADER_PORT"             : "ポート:",
+        "FIELD_HEADER_READ_ONLY"        : "閲覧モード:",
+        "FIELD_HEADER_SFTP_DIRECTORY"   : "デフォルトのアップロード先ディレクトリ:",
+        "FIELD_HEADER_SFTP_HOSTNAME"    : "ホスト名:",
+        "FIELD_HEADER_SFTP_PASSPHRASE"  : "パスフレーズ:",
+        "FIELD_HEADER_SFTP_PASSWORD"    : "パスワード:",
+        "FIELD_HEADER_SFTP_PORT"        : "ポート:",
+        "FIELD_HEADER_SFTP_PRIVATE_KEY" : "秘密鍵:",
+        "FIELD_HEADER_SFTP_USERNAME"    : "ユーザー名:",
+        "FIELD_HEADER_SWAP_RED_BLUE"    : "赤と青の画素を入れ替える:",
+
+        "FIELD_OPTION_COLOR_DEPTH_8"     : "256色",
+        "FIELD_OPTION_COLOR_DEPTH_16"    : "ハイカラー (16ビット)",
+        "FIELD_OPTION_COLOR_DEPTH_24"    : "True color (24ビット)",
+        "FIELD_OPTION_COLOR_DEPTH_32"    : "True color (32ビット)",
+        "FIELD_OPTION_COLOR_DEPTH_EMPTY" : "",
+
+        "FIELD_OPTION_CURSOR_EMPTY"  : "",
+        "FIELD_OPTION_CURSOR_LOCAL"  : "ローカル",
+        "FIELD_OPTION_CURSOR_REMOTE" : "リモート",
+
+        "FIELD_OPTION_CLIPBOARD_ENCODING_CP1252"    : "CP1252",
+        "FIELD_OPTION_CLIPBOARD_ENCODING_EMPTY"     : "",
+        "FIELD_OPTION_CLIPBOARD_ENCODING_ISO8859_1" : "ISO 8859-1",
+        "FIELD_OPTION_CLIPBOARD_ENCODING_UTF_8"     : "UTF-8",
+        "FIELD_OPTION_CLIPBOARD_ENCODING_UTF_16"    : "UTF-16",
+
+        "NAME" : "VNC",
+
+        "SECTION_HEADER_AUDIO"          : "オーディオ",
+        "SECTION_HEADER_AUTHENTICATION" : "認証",
+        "SECTION_HEADER_CLIPBOARD"      : "クリップボード",
+        "SECTION_HEADER_DISPLAY"        : "表示",
+        "SECTION_HEADER_NETWORK"        : "ネットワーク",
+        "SECTION_HEADER_REPEATER"       : "VNCリピーター",
+        "SECTION_HEADER_SFTP"           : "SFTP"
+
+    },
+
+    "SETTINGS" : {
+
+        "SECTION_HEADER_SETTINGS" : "設定"
+
+    },
+
+    "SETTINGS_CONNECTION_HISTORY" : {
+
+        "ACTION_SEARCH" : "@:APP.ACTION_SEARCH",
+
+        "FIELD_PLACEHOLDER_FILTER" : "@:APP.FIELD_PLACEHOLDER_FILTER",
+
+        "FORMAT_DATE" : "@:APP.FORMAT_DATE_TIME_PRECISE",
+
+        "HELP_CONNECTION_HISTORY" : "過去の接続履歴がここに表示されます。カラムのヘッダーをクリックすることでソートできます。特定の履歴を検索した場合は絞り込み文字列を入力し、「Search」をクリックしてください。絞り込み文字列に該当する履歴が表示されます。",
+
+        "INFO_CONNECTION_DURATION_UNKNOWN" : "--",
+        "INFO_NO_HISTORY"                  : "該当する履歴はありません",
+
+        "TABLE_HEADER_SESSION_CONNECTION_NAME" : "接続名",
+        "TABLE_HEADER_SESSION_DURATION"        : "接続時間",
+        "TABLE_HEADER_SESSION_STARTDATE"       : "開始時間",
+        "TABLE_HEADER_SESSION_USERNAME"        : "ユーザー名",
+
+        "TEXT_HISTORY_DURATION" : "@:APP.TEXT_HISTORY_DURATION"
+
+    },
+
+    "SETTINGS_CONNECTIONS" : {
+
+        "ACTION_ACKNOWLEDGE"          : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_NEW_CONNECTION"       : "新しい接続",
+        "ACTION_NEW_CONNECTION_GROUP" : "新しいグループ",
+
+        "DIALOG_HEADER_ERROR" : "@:APP.DIALOG_HEADER_ERROR",
+
+        "FIELD_PLACEHOLDER_FILTER" : "@:APP.FIELD_PLACEHOLDER_FILTER",
+
+        "HELP_CONNECTIONS"   : "下の接続をクリックまたはタップで接続の編集ができます。アクセスレベルに応じて、接続の追加、削除、接続のプロパティ (プロトコル、ホスト名、ポートなど) の変更ができます。",
+        
+        "INFO_ACTIVE_USER_COUNT" : "@:APP.INFO_ACTIVE_USER_COUNT",
+
+        "SECTION_HEADER_CONNECTIONS"     : "接続"
+
+    },
+
+    "SETTINGS_PREFERENCES" : {
+
+        "ACTION_ACKNOWLEDGE"        : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_CANCEL"             : "@:APP.ACTION_CANCEL",
+        "ACTION_UPDATE_PASSWORD"    : "@:APP.ACTION_UPDATE_PASSWORD",
+
+        "DIALOG_HEADER_ERROR"    : "@:APP.DIALOG_HEADER_ERROR",
+
+        "ERROR_PASSWORD_BLANK"    : "@:APP.ERROR_PASSWORD_BLANK",
+        "ERROR_PASSWORD_MISMATCH" : "@:APP.ERROR_PASSWORD_MISMATCH",
+
+        "FIELD_HEADER_LANGUAGE"           : "表示言語:",
+        "FIELD_HEADER_PASSWORD"           : "パスワード:",
+        "FIELD_HEADER_PASSWORD_OLD"       : "現在のパスワード:",
+        "FIELD_HEADER_PASSWORD_NEW"       : "新しいパスワード:",
+        "FIELD_HEADER_PASSWORD_NEW_AGAIN" : "新しいパスワードの確認:",
+        "FIELD_HEADER_USERNAME"           : "ユーザー名:",
+        
+        "HELP_DEFAULT_INPUT_METHOD" : "デフォルトの入力メソッドはGuacamoleがどのようにキーボードイベントを受信するかを指定します。スマートフォンを利用する場合、IMEを使いたい場合にこの設定の変更が必要になることがあります。この設定はGuacamoleメニューから接続ごとの設定として上書きできます。",
+        "HELP_DEFAULT_MOUSE_MODE"   : "デフォルトのマウスエミュレーションモードは新しい接続におけるタッチ時のリモート側のマウスの振る舞いを指定します。この設定はGuacamoleメニューから接続ごとの設定として上書きできます。",
+        "HELP_INPUT_METHOD_NONE"    : "@:CLIENT.HELP_INPUT_METHOD_NONE",
+        "HELP_INPUT_METHOD_OSK"     : "@:CLIENT.HELP_INPUT_METHOD_OSK",
+        "HELP_INPUT_METHOD_TEXT"    : "@:CLIENT.HELP_INPUT_METHOD_TEXT",
+        "HELP_LANGUAGE"             : "Guacamoleのテキストの言語を以下から選択してください。選択できる言語は現在インストールされている言語によります。",
+        "HELP_MOUSE_MODE_ABSOLUTE"  : "@:CLIENT.HELP_MOUSE_MODE_ABSOLUTE",
+        "HELP_MOUSE_MODE_RELATIVE"  : "@:CLIENT.HELP_MOUSE_MODE_RELATIVE",
+        "HELP_UPDATE_PASSWORD"      : "パスワードを変更したい場合は以下に現在のパスワードと新しいパスワードを入力し、「パスワードの変更」をクリックしてください。変更は即座に反映されます。",
+
+        "INFO_PASSWORD_CHANGED" : "パスワードが変更されました。",
+
+        "NAME_INPUT_METHOD_NONE" : "@:CLIENT.NAME_INPUT_METHOD_NONE",
+        "NAME_INPUT_METHOD_OSK"  : "@:CLIENT.NAME_INPUT_METHOD_OSK",
+        "NAME_INPUT_METHOD_TEXT" : "@:CLIENT.NAME_INPUT_METHOD_TEXT",
+
+        "SECTION_HEADER_DEFAULT_INPUT_METHOD" : "デフォルトの入力メソッド",
+        "SECTION_HEADER_DEFAULT_MOUSE_MODE"   : "デフォルトのマウスエミュレーションモード",
+        "SECTION_HEADER_UPDATE_PASSWORD"      : "パスワードの変更"
+
+    },
+
+    "SETTINGS_USERS" : {
+
+        "ACTION_ACKNOWLEDGE"   : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_NEW_USER"      : "新しいユーザー",
+
+        "DIALOG_HEADER_ERROR" : "@:APP.DIALOG_HEADER_ERROR",
+
+        "FIELD_PLACEHOLDER_FILTER" : "@:APP.FIELD_PLACEHOLDER_FILTER",
+
+        "HELP_USERS" : "以下をクリックまたはタップで、ユーザーを編集できます。アクセスレベルに応じて、ユーザーの追加、削除、またはパスワードの変更ができます。",
+
+        "SECTION_HEADER_USERS"       : "ユーザー"
+
+    },
+    
+    "SETTINGS_SESSIONS" : {
+        
+        "ACTION_ACKNOWLEDGE" : "@:APP.ACTION_ACKNOWLEDGE",
+        "ACTION_CANCEL"      : "@:APP.ACTION_CANCEL",
+        "ACTION_DELETE"      : "接続を切断する",
+        
+        "DIALOG_HEADER_CONFIRM_DELETE" : "接続の切断",
+        "DIALOG_HEADER_ERROR"          : "@:APP.DIALOG_HEADER_ERROR",
+        
+        "FIELD_PLACEHOLDER_FILTER" : "@:APP.FIELD_PLACEHOLDER_FILTER",
+        
+        "FORMAT_STARTDATE" : "@:APP.FORMAT_DATE_TIME_PRECISE",
+
+        "HELP_SESSIONS" : "現在アクティブなGuacamoleセッションがここに表示されます。もしセッションを切断したい場合は、セッション名の横のチェックボックスにチェックを入れ、「接続の切断」をクリックしてください。接続を切断すると、利用中のユーザーの接続は即座に切断されます。",
+        
+        "INFO_NO_SESSIONS" : "現在アクティブなセッションはありません",
+
+        "SECTION_HEADER_SESSIONS" : "アクティブなセッション",
+        
+        "TABLE_HEADER_SESSION_CONNECTION_NAME" : "接続名",
+        "TABLE_HEADER_SESSION_REMOTEHOST"      : "リモートホスト名",
+        "TABLE_HEADER_SESSION_STARTDATE"       : "開始時間",
+        "TABLE_HEADER_SESSION_USERNAME"        : "ユーザー名",
+        
+        "TEXT_CONFIRM_DELETE" : "選択されたセッションを切断してよろしいですか? セッションを利用するユーザーの接続は即座に切断されます。"
+
+    },
+
+    "USER_MENU" : {
+
+        "ACTION_LOGOUT"             : "@:APP.ACTION_LOGOUT",
+        "ACTION_MANAGE_CONNECTIONS" : "@:APP.ACTION_MANAGE_CONNECTIONS",
+        "ACTION_MANAGE_PREFERENCES" : "@:APP.ACTION_MANAGE_PREFERENCES",
+        "ACTION_MANAGE_SESSIONS"    : "@:APP.ACTION_MANAGE_SESSIONS",
+        "ACTION_MANAGE_SETTINGS"    : "@:APP.ACTION_MANAGE_SETTINGS",
+        "ACTION_MANAGE_USERS"       : "@:APP.ACTION_MANAGE_USERS",
+        "ACTION_NAVIGATE_HOME"      : "@:APP.ACTION_NAVIGATE_HOME",
+        "ACTION_VIEW_HISTORY"       : "@:APP.ACTION_VIEW_HISTORY"
+
+    }
+
+}
